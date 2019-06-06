@@ -42,7 +42,7 @@ Verify that the resources have been created successfully
 - Create an entry point Azure function that gets triggered when events arrive at Kansas Event Hub. 
 - Create an entry point Azure function that gets triggered when events arrive at Virginia Event Hub. 
 - Create an orchestrator function that will be called by the entry point functions
-- Create activity functions that will enrich the patient or hospital metadata leveraging Azure Cognitive services (vision, text analysis).
+- Create activity functions that will enrich the patient or hospital metadata leveraging Azure Cognitive services (vision, text analysis). This function will extract metadata from images in the record and also analyze feedback as positive or negative using sentiment analysis.
 - Create an activity function that will collect the final metadata and write it out to datastore (Cosmos DB or SQL Server). Data from each of the 4 output event hubs will go to a seperate SQL table or Cosmos DB collection.
 - Run the data generator code to generate events for 60 minutes.
 
