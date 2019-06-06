@@ -11,12 +11,14 @@ The final stream can be visualized in real-time using Azure Power BI.
 ![alt text](DataPlusAIHack.png "Stream Interactions with Data and Functions")
 
 ## Resources and Pre-Requisites
-For the hack, we will simplify the process of getting started by providing an Ubuntu 16 VM image where the following tools have been installed to reduce the level of effort necessary to get started. Alternatively, you may also install these tools on your machine for local development and debugging:
+For the hack, you will need to install these tools on your machine for local development and debugging:
 
 - Azure CLI 2.0.64 or later
 - Python 3.6.8 (or a later version in the 3.6.x series)
 - Node.js 10.15.3 or later
 - .NET CORE SDK 2.2
+- Visual Studio Code 1.35.0 or later
+- Git
 
 ## Installation of Resources
 There will be example ARM templates and CLI commands to assist with the provisioning and configuration of platform services necessary for this hackathon. Examples are available in the link below:
