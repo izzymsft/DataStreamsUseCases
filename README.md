@@ -20,10 +20,12 @@ For the hack, you will need to install these tools on your machine for local dev
 - Visual Studio Code 1.35.0 or later
 - Git
 
-## Installation of Resources
-There will be example ARM templates and CLI commands to assist with the provisioning and configuration of platform services necessary for this hackathon. Examples are available in the link below:
-https://github.com/izzymsft/DataStreamsUseCases/blob/master/PLATFORM-RESOURCES.md
-
 ## Challanges
 Challenges for the hack are available in the link below:
 https://github.com/izzymsft/DataStreamsUseCases/blob/master/CHALLENGES.md
+
+## Provisioning of Azure Platform Resources
+There will be example ARM templates and CLI commands to assist with the provisioning and configuration of platform services necessary for this hackathon. Examples are available in the link below:
+https://github.com/izzymsft/DataStreamsUseCases/blob/master/PLATFORM-RESOURCES.md
+
+
