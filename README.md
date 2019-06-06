@@ -20,6 +20,8 @@ For the hack, we will simplify the process of getting started by providing an Ub
 
 ## Installation of Resources
 There will be example ARM templates and CLI commands to assist with the provisioning and configuration of platform services necessary for this hackathon. Examples are available in the link below:
+https://github.com/izzymsft/DataStreamsUseCases/blob/master/PLATFORM-RESOURCES.md
 
 ## Challanges
 Challenges for the hack are available in the link below:
+https://github.com/izzymsft/DataStreamsUseCases/blob/master/CHALLENGES.md
