@@ -9,3 +9,12 @@ In this use case, we are considering scenarios where data is coming from multipl
 The final stream can be visualized in real-time using Azure Power BI.
 
 ![alt text](DataPlusAIHack.png "Stream Interactions with Data and Functions")
+
+## Resources and Pre-Requisites
+For the hack, we will simplify the process of getting started by providing an Ubuntu 16 VM image where the following tools have been installed to reduce the level of effort necessary to get started. Alternatively, you may also install these tools on your machine for local development and debugging:
+
+- Azure CLI
+- Python 3.6.8 (or a later version in the 3.6.x series)
+- Node.js 10.15.3 or later
+- .NET CORE SDK 2.2
+
