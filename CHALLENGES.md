@@ -49,10 +49,12 @@ Verify that the resources have been created successfully
 Information about the Face and Text Analytics API from Cognitive Services are available here:
 
 **Face API**
+
 https://azure.microsoft.com/en-us/services/cognitive-services/face/
 https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236
 
 **Sentiment Analysis API**
+
 https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/
 https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c9
 
