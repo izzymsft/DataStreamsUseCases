@@ -16,10 +16,10 @@ Once you have these tools installed, clone the repository for the data generator
 
 ## Challenge 1
 
-- Create an SQL Database Instance that will be used to store the reference data as well as the final output data
+- Create an SQL Database Instance that will be used to store the reference data as well as the final output data.
+- Run the DDL and DML statements to create the tables and load the reference data into the SQL tables.
 - Create a Cosmos DB database and collection that will be used to store the final output.
 - Create a Storage Account that will be used to store reference data
-- Create a Storage Account that will be used to store the incoming data stream
 - Create the Event Hub name space that will be used for the incoming data stream
 - Create 3 input EventHubs called California, Florida and Washington.
 - Create 4 output EventHubs called Texas, Alabama, Kansas and Virginia
@@ -29,12 +29,12 @@ Verify that the resources have been created successfully
 
 ## Challenge 2
 
-- Create a Stream Analytics Job that uses the Tumbling window to fetch how many unique patients we have every 15 minutes from the California Event Hub. Write the output to the Texas Event Hub. Include events that arrive at the beginning of the interval and exclude those that arrive at the end of each interval. Each output event should include the mailing address and number of beds in the hospital.
-- Create a Stream Analytics Job that uses the Hopping window to fetch how many unique patients we have every 15 minutes with a hopping size of 5 minutes from the Washington Event Hub. Write the output to the Alabama Event Hub. Exclude events that arrive at the beginning of the interval and include those that arrive at the end of each interval. Each output event should include the mailing address and number of beds in the hospital.
-- Create a Stream Analytics Job that uses the Sliding window to retreive the number of patients from the California Event Hub in the out-patient-unit grouped by gender for a 15 minute window and update the view each time a patient enters or exits the window. Write the output to the Kansas Event Hub. Each output event should include the mailing address and number of beds in the hospital.
-- Create a Stream Analytics Job that uses the Session Window function to retrieve the vitals of each patient from the Florida Event Hub given a 10 minute timeout with a maximum duration of 15 minutes. Write the output to the Virgina Event Hub. Each output event should include the mailing address, date of birth, primary care doctor and emergency contact for each patient.
+- Create a Stream Analytics Job that uses the Tumbling window to fetch how many unique patients we have every 15 seconds from the California Event Hub. Write the output to the Texas Event Hub. Include events that arrive at the beginning of the interval and exclude those that arrive at the end of each interval. Each output event should include the mailing address and number of beds in the hospital.
+- Create a Stream Analytics Job that uses the Hopping window to fetch how many unique patients we have every 15 seconds with a hopping size of 5 minutes from the Washington Event Hub. Write the output to the Alabama Event Hub. Exclude events that arrive at the beginning of the interval and include those that arrive at the end of each interval. Each output event should include the mailing address and number of beds in the hospital.
+- Create a Stream Analytics Job that uses the Sliding window to retreive the number of patients from the California Event Hub in the out-patient-unit grouped by gender for a 15 seconds window and update the view each time a patient enters or exits the window. Write the output to the Kansas Event Hub. Each output event should include the mailing address and number of beds in the hospital.
+- Create a Stream Analytics Job that uses the Session Window function to retrieve the vitals of each patient from the Florida Event Hub given a 10 second timeout with a maximum duration of 15 seconds. Write the output to the Virgina Event Hub. Each output event should include the mailing address, date of birth, primary care doctor and emergency contact for each patient.
 - Start all 4 stream analytics jobs.
-- Run the data generator code to generate events for 60 minutes.
+- Run the data generator code to generate events for 100 rounds. You can define this in the Program.cs C# script.
 
 ## Challenge 3
 - Create an entry point Azure function that gets triggered when events arrive at Texas Event Hub. 
@@ -44,10 +44,10 @@ Verify that the resources have been created successfully
 - Create an orchestrator function that will be called by the entry point functions
 - Create activity functions that will enrich the patient or hospital metadata leveraging Azure Cognitive services (vision, text analysis). This function will extract metadata from images in the record and also analyze feedback as positive or negative using sentiment analysis.
 - Create an activity function that will collect the final metadata and write it out to datastore (Cosmos DB or SQL Server). Data from each of the 4 output event hubs will go to a seperate SQL table or Cosmos DB collection.
-- Run the data generator code to generate events for 60 minutes.
+- Run the data generator code to generate events for 100 rounds. You can define this in the Program.cs C# script.
 
 ## Challenge 4
 - Deploy a Power BI instance
 - Visualize the output streams coming out of the corresponding tables/collections for the 4 event hubs.
-- Run the data generator code to generate events for 60 minutes.
+- Run the data generator code to generate events for 100 rounds. You can define this in the Program.cs C# script.
 
