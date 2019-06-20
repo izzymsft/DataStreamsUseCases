@@ -46,6 +46,17 @@ Verify that the resources have been created successfully
 - Create an activity function that will collect the final metadata and write it out to datastore (Cosmos DB or SQL Server). Data from each of the 4 output event hubs will go to a seperate SQL table or Cosmos DB collection.
 - Run the data generator code to generate events for 100 rounds. You can define this in the Program.cs C# script.
 
+Information about the Face and Text Analytics API from Cognitive Services are available here:
+
+**Face API**
+https://azure.microsoft.com/en-us/services/cognitive-services/face/
+https://westus.dev.cognitive.microsoft.com/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236
+
+**Sentiment Analysis API**
+https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/
+https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c9
+
+
 ## Challenge 4
 - Deploy a Power BI instance
 - Visualize the output streams coming out of the corresponding tables/collections for the 4 event hubs.
